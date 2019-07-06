@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: com.java:meite-shop-service-api-weixin-dto:1.0-RELEASE">
+    <CLASSES>
+      <root url="jar://G:/Program Files/repository/com/java/meite-shop-service-api-weixin-dto/1.0-RELEASE/meite-shop-service-api-weixin-dto-1.0-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/meite-shop-api-dto/meite-shop-service-api-weixin-dto/meite-shop-service-api-weixin-dto-1.0-RELEASE-javadoc.jar!/" />
+      <root url="jar://G:/Program Files/repository/com/java/meite-shop-service-api-weixin-dto/1.0-RELEASE/meite-shop-service-api-weixin-dto-1.0-RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/meite-shop-api-dto/meite-shop-service-api-weixin-dto/meite-shop-service-api-weixin-dto-1.0-RELEASE-sources.jar!/" />
+      <root url="jar://G:/Program Files/repository/com/java/meite-shop-service-api-weixin-dto/1.0-RELEASE/meite-shop-service-api-weixin-dto-1.0-RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

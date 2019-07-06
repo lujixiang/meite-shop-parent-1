@@ -1,0 +1,50 @@
+###微信服务启动端口号
+server:
+  port: 8300
+###服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-weixin
+  redis:
+    host: 192.168.136.130
+
+###服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:8100/eureka
+
+####swagger相关配置
+swagger:
+  base-package: com.java.weixin.service   #扫包范围
+  title: SpringCloud2.x构建微服务电商项目-微信服务接口  #标题
+  description: 该项目“基于SpringCloud2.x构建微服务电商项目”由xxx版权所有，未经过允许的情况下，私自使用属于违法行为。
+  version: 1.1
+  terms-of-service-url: www.baidu.com
+  contact:
+    name: jiangli
+    email: 3134637@qq.com
+
+
+logging:
+  level:
+    org.springframework.web: INFO
+    com.github.binarywang.demo.wx.mp: DEBUG
+    me.chanjar.weixin: DEBUG
+wx:
+  mp:
+    configs:
+      - appId: wx02ac801694b4281a #（一个公众号的appid）
+        secret: 1e5cbe732d88acd616af9850455ad23e #（公众号的appsecret）
+        token: jl-boot #（接口配置里的Token值）
+
+weixin:
+  registration:
+    code:
+     ###微信注册码消息
+      message:  您的注册码为:%s，请关注<a href="https://ke.qq.com/course/273548">大帅哥公众号</a>。联系QQ：<a href='https://jq.qq.com/?_wv=1027&k=5TVfAMF'>31346337</a>，期待你的加入，感谢！
+  ###默认提示消息
+  default:
+    registration:
+      code:
+        message: 您的消息，我们已经收到,会及时回复给您的!

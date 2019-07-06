@@ -1,0 +1,36 @@
+#### 整合freemarker
+spring:
+  freemarker:
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    template-loader-path:
+    - classpath:/templates
+  application:
+    name: app-pay-web
+  redis:
+    host: 192.168.136.130
+###服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+server:
+  port: 8050
+
+xxl-sso:
+  excluded:
+    paths:
+xxl:
+  sso:
+    server: http://sso.meite.com:8080/xxl-sso-server
+    logout:
+      path: /logout
+    redis:
+      address: redis://192.168.136.130:6379
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>meite-shop-service-impl</artifactId>
+        <groupId>com.java</groupId>
+        <version>1.0-RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>meite-shop-service-member</artifactId>
+
+    <dependencies>
+        <!--引入自己服务的接口,为了实现它-->
+        <dependency>
+            <groupId>com.java</groupId>
+            <artifactId>meite-shop-service-api-member</artifactId>
+            <version>1.0-RELEASE</version>
+        </dependency>
+        <!--引入其他服务的接口,方便feign接口复用-->
+        <!--<dependency>-->
+            <!--<groupId>com.java</groupId>-->
+            <!--<artifactId>meite-shop-service-api-weixin</artifactId>-->
+            <!--<version>1.0-RELEASE</version>-->
+        <!--</dependency>-->
+    </dependencies>
+</project>

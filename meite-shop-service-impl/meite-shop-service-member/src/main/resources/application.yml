@@ -1,0 +1,55 @@
+###会员服务启动端口号
+server:
+  port: 8400
+###服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-member
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.136.130:3306/meite-member?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
+  redis:
+    host: 192.168.136.130
+###服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+####swagger相关配置
+swagger:
+  base-package: com.java.member.service   #扫包范围
+  title: SpringCloud2.x构建微服务电商项目-会员服务接口  #标题
+  description: 该项目“基于SpringCloud2.x构建微服务电商项目”由xxx版权所有，未经过允许的情况下，私自使用属于违法行为。
+  version: 1.1
+  terms-of-service-url: www.baidu.com
+  contact:
+    name: jiangli
+    email: 3134637@qq.com
+
+##mybatis
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  global-config:
+    #刷新mapper 调试神器
+    db-config:
+      #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+      id-type: AUTO
+      #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+      field-strategy: not_empty
+      #数据库大写下划线转换
+      #capital-mode: true
+      #逻辑删除配置
+      logic-delete-value: Y
+      logic-not-delete-value: N
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+##打印mybatis日志
+#logging:
+#  level:
+#    com.java.member.mapper: debug  #开发环境debug  生产环境info或者error
+
