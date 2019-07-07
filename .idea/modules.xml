@@ -6,13 +6,16 @@
       <module fileurl="file://$PROJECT_DIR$/meite-shop-api-dto/meite-shop-api-member-dto/meite-shop-api-member-dto.iml" filepath="$PROJECT_DIR$/meite-shop-api-dto/meite-shop-api-member-dto/meite-shop-api-member-dto.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-api-dto/meite-shop-api-pay-dto/meite-shop-api-pay-dto.iml" filepath="$PROJECT_DIR$/meite-shop-api-dto/meite-shop-api-pay-dto/meite-shop-api-pay-dto.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-elk-kafka/meite-shop-baasics-elk-kafka.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-elk-kafka/meite-shop-baasics-elk-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-job/meite-shop-baasics-xxl-job.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-job/meite-shop-baasics-xxl-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-sso-server/meite-shop-baasics-xxl-sso-server.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-sso-server/meite-shop-baasics-xxl-sso-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/meite-shop-basics-springcloud-eureka.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/meite-shop-basics-springcloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-zuul/meite-shop-basics-springcloud-zuul.iml" filepath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-zuul/meite-shop-basics-springcloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-common/meite-shop-common.iml" filepath="$PROJECT_DIR$/meite-shop-common/meite-shop-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-common/meite-shop-common-core/meite-shop-common-core.iml" filepath="$PROJECT_DIR$/meite-shop-common/meite-shop-common-core/meite-shop-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meite-shop-job/meite-shop-job.iml" filepath="$PROJECT_DIR$/meite-shop-job/meite-shop-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-parent.iml" filepath="$PROJECT_DIR$/meite-shop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meite-shop-job/meite-shop-pay-job/meite-shop-pay-job.iml" filepath="$PROJECT_DIR$/meite-shop-job/meite-shop-pay-job/meite-shop-pay-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-pay-plugin/meite-shop-pay-plugin.iml" filepath="$PROJECT_DIR$/meite-shop-pay-plugin/meite-shop-pay-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-portal/meite-shop-portal.iml" filepath="$PROJECT_DIR$/meite-shop-portal/meite-shop-portal.iml" />
       <module fileurl="file://$PROJECT_DIR$/meite-shop-portal/meite-shop-portal-pay-web/meite-shop-portal-pay-web.iml" filepath="$PROJECT_DIR$/meite-shop-portal/meite-shop-portal-pay-web/meite-shop-portal-pay-web.iml" />

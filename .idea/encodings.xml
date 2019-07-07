@@ -7,11 +7,14 @@
     <file url="file://$PROJECT_DIR$/meite-shop-api-dto/meite-shop-api-pay-dto" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-basics" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-elk-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-baasics-xxl-sso-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-common/meite-shop-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meite-shop-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meite-shop-job/meite-shop-pay-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-pay-plugin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-pay-plugin/meite-shop-unionpay-plugin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-portal" charset="UTF-8" />

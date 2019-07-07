@@ -1,0 +1,24 @@
+server:
+  port: 8081
+logging:
+  config: classpath:logback.xml
+xxl:
+  job:
+    executor:
+      logpath: /data/applogs/xxl-job/jobhandler
+      appname: xxl-job-executor-sample
+      port: 9999
+      logretentiondays: -1
+      ip: 127.0.0.1
+    admin:
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    accessToken:
+
+###服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    name: app-pay-job

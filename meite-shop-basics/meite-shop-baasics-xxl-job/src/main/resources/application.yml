@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: xxl-job-admin
+  freemarker:
+    settings:
+      number_format: 0.##########
+    charset: UTF-8
+    request-context-attribute: request
+    templateLoaderPath: classpath:/templates/
+    suffix: .ftl
+  mail:
+    password: xxx
+    port: 25
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+          auth: true
+    username: xxx@qq.com
+  datasource:
+    password: 123456
+    tomcat:
+      test-on-borrow: true
+      max-active: 30
+      validation-query: SELECT 1
+      max-wait: 10000
+      validation-interval: 30000
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.136.130:3306/xxl-job?Unicode=true&characterEncoding=UTF-8
+    username: root
+  resources:
+    static-locations: classpath:/static/
+  mvc:
+    static-path-pattern: /static/**
+server:
+  port: 8080
+  servlet:
+    context-path: /xxl-job-admin
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper/*Mapper.xml
+xxl:
+  job:
+    login:
+      password: 123456
+      username: admin
+    accessToken:
+    i18n:
+
+###\u670D\u52A1\u6CE8\u518C\u5230eureka\u5730\u5740
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka

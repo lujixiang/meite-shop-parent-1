@@ -9,10 +9,12 @@
         <module name="meite-shop-api-member-dto" />
         <module name="meite-shop-api-pay-dto" />
         <module name="meite-shop-baasics-elk-kafka" />
+        <module name="meite-shop-baasics-xxl-job" />
         <module name="meite-shop-baasics-xxl-sso-server" />
         <module name="meite-shop-basics-springcloud-eureka" />
         <module name="meite-shop-basics-springcloud-zuul" />
         <module name="meite-shop-common-core" />
+        <module name="meite-shop-pay-job" />
         <module name="meite-shop-portal-pay-web" />
         <module name="meite-shop-portal-web" />
         <module name="meite-shop-service-api-goods" />
@@ -33,13 +35,17 @@
       <module name="meite-shop-api-member-dto" target="1.8" />
       <module name="meite-shop-api-pay-dto" target="1.8" />
       <module name="meite-shop-baasics-elk-kafka" target="1.8" />
+      <module name="meite-shop-baasics-xxl-job" target="1.8" />
       <module name="meite-shop-baasics-xxl-sso-server" target="1.8" />
       <module name="meite-shop-basics" target="1.8" />
       <module name="meite-shop-basics-springcloud-eureka" target="1.8" />
       <module name="meite-shop-basics-springcloud-zuul" target="1.8" />
+      <module name="meite-shop-basics-xxl-job-admin" target="1.8" />
       <module name="meite-shop-common" target="1.8" />
       <module name="meite-shop-common-core" target="1.8" />
+      <module name="meite-shop-job" target="1.8" />
       <module name="meite-shop-parent" target="1.8" />
+      <module name="meite-shop-pay-job" target="1.8" />
       <module name="meite-shop-pay-plugin" target="1.8" />
       <module name="meite-shop-portal" target="1.8" />
       <module name="meite-shop-portal-pay-web" target="1.8" />
