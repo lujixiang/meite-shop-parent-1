@@ -14,6 +14,7 @@
         <module name="meite-shop-basics-springcloud-eureka" />
         <module name="meite-shop-basics-springcloud-zuul" />
         <module name="meite-shop-common-core" />
+        <module name="meite-shop-mq-constants" />
         <module name="meite-shop-pay-job" />
         <module name="meite-shop-portal-pay-web" />
         <module name="meite-shop-portal-web" />
@@ -24,6 +25,7 @@
         <module name="meite-shop-service-goods" />
         <module name="meite-shop-service-member" />
         <module name="meite-shop-service-pay" />
+        <module name="meite-shop-service-point" />
         <module name="meite-shop-service-weixin" />
         <module name="meite-shop-unionpay-plugin" />
       </profile>
@@ -44,6 +46,7 @@
       <module name="meite-shop-common" target="1.8" />
       <module name="meite-shop-common-core" target="1.8" />
       <module name="meite-shop-job" target="1.8" />
+      <module name="meite-shop-mq-constants" target="1.8" />
       <module name="meite-shop-parent" target="1.8" />
       <module name="meite-shop-pay-job" target="1.8" />
       <module name="meite-shop-pay-plugin" target="1.8" />
@@ -61,6 +64,7 @@
       <module name="meite-shop-service-impl" target="1.8" />
       <module name="meite-shop-service-member" target="1.8" />
       <module name="meite-shop-service-pay" target="1.8" />
+      <module name="meite-shop-service-point" target="1.8" />
       <module name="meite-shop-service-weixin" target="1.8" />
       <module name="meite-shop-unionpay-plugin" target="1.8" />
     </bytecodeTargetLevel>

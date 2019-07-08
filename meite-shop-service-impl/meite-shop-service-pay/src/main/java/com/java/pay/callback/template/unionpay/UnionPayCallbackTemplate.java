@@ -10,19 +10,23 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.java.pay.callback.template.AbstractPayCallbackTemplate;
 import com.java.pay.constant.PayConstant;
 import com.java.pay.dao.PaymentTransactionDao;
 import com.java.pay.entity.PaymentTransactionEntity;
+import com.java.pay.mq.producer.PointMessageProducer;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import com.unionpay.acp.sdk.AcpService;
 import com.unionpay.acp.sdk.LogUtil;
 import com.unionpay.acp.sdk.SDKConstants;
 import com.unionpay.acp.sdk.UnionPayBase;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @description: 银联支付回调模版实现
@@ -32,6 +36,8 @@ public class UnionPayCallbackTemplate extends AbstractPayCallbackTemplate {
 
 	@Autowired
 	private PaymentTransactionDao paymentTransactionDao;
+	@Autowired
+	private PointMessageProducer pointMessageProducer;
 
 	@Override
 	public Map<String, String> verifySignature(HttpServletRequest req, HttpServletResponse resp) {
@@ -81,7 +87,8 @@ public class UnionPayCallbackTemplate extends AbstractPayCallbackTemplate {
 		// 2.将状态改为已经支付成功
 		paymentTransaction.setPaymentStatus(PayConstant.PAY_STATUS_SUCCESS);
 		paymentTransactionDao.updateById(paymentTransaction);
-		// 3.调用积分服务接口增加积分(处理幂等性问题)
+		// 3.调用MQ积分服务接口增加积分(处理幂等性问题)
+		addMQIntegral(paymentTransaction);
 		return successResult();
 	}
 
@@ -156,5 +163,17 @@ public class UnionPayCallbackTemplate extends AbstractPayCallbackTemplate {
 	/**
 	 * 回调机制 必须遵循规范 重试机制都是采用间隔新 错开的话 必须
 	 */
+
+	/**
+	 * 基于MQ增加积分
+	 */
+	@Async
+	public void addMQIntegral(PaymentTransactionEntity paymentTransaction) {
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("paymentId", paymentTransaction.getPaymentId());
+		jsonObject.put("userId", paymentTransaction.getUserId());
+		jsonObject.put("integral", paymentTransaction.getPayAmount());
+		pointMessageProducer.send(jsonObject);
+	}
 
 }

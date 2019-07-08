@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>meite-shop-service-pay</artifactId>
+    <artifactId>meite-shop-service-point</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,26 +17,17 @@
             <artifactId>meite-shop-mq-constants</artifactId>
             <version>1.0-RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>com.java</groupId>
-            <artifactId>meite-shop-unionpay-plugin</artifactId>
-            <version>1.0-RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>com.java</groupId>
-            <artifactId>meite-shop-service-api-pay</artifactId>
-            <version>1.0-RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>com.java</groupId>
-            <artifactId>meite-shop-common</artifactId>
-            <version>1.0-RELEASE</version>
-        </dependency>
-
         <!-- 添加springboot对amqp的支持 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!--mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.1</version>
         </dependency>
     </dependencies>
 </project>

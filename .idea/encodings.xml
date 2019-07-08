@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-common/meite-shop-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meite-shop-common/meite-shop-mq-constants" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-job/meite-shop-pay-job" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-pay-plugin" charset="UTF-8" />
@@ -29,6 +30,7 @@
     <file url="file://$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-goods" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-point" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

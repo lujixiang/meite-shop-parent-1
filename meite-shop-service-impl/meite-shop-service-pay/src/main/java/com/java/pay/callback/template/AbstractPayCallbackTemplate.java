@@ -9,6 +9,7 @@ import com.java.pay.constant.PayConstant;
 import org.apache.commons.lang.StringUtils;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -43,6 +44,7 @@ public abstract class AbstractPayCallbackTemplate {
 	 * 3. 执行的异步回调业务逻辑<br>
 	 * 
 	 */
+	@Transactional
 	public String asyncCallBack(HttpServletRequest req, HttpServletResponse resp) {
 		// 1. 验证报文参数 相同点 获取所有的请求参数封装成为map集合 并且进行参数验证
 		Map<String, String> verifySignature = verifySignature(req, resp);
