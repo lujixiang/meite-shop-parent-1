@@ -19,4 +19,11 @@
         <module>meite-shop-baasics-xxl-job</module>
     </modules>
 
+    <dependencies>
+        <!-- mysql 依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
 </project>
