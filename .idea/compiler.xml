@@ -18,14 +18,19 @@
         <module name="meite-shop-pay-job" />
         <module name="meite-shop-portal-pay-web" />
         <module name="meite-shop-portal-web" />
+        <module name="meite-shop-service-api-auth" />
         <module name="meite-shop-service-api-goods" />
         <module name="meite-shop-service-api-member" />
         <module name="meite-shop-service-api-pay" />
+        <module name="meite-shop-service-api-seckill" />
         <module name="meite-shop-service-api-weixin" />
+        <module name="meite-shop-service-auth" />
         <module name="meite-shop-service-goods" />
         <module name="meite-shop-service-member" />
         <module name="meite-shop-service-pay" />
         <module name="meite-shop-service-point" />
+        <module name="meite-shop-service-seckill" />
+        <module name="meite-shop-service-seckill-consumer" />
         <module name="meite-shop-service-weixin" />
         <module name="meite-shop-unionpay-plugin" />
       </profile>
@@ -54,17 +59,22 @@
       <module name="meite-shop-portal-pay-web" target="1.8" />
       <module name="meite-shop-portal-web" target="1.8" />
       <module name="meite-shop-service-api" target="1.8" />
+      <module name="meite-shop-service-api-auth" target="1.8" />
       <module name="meite-shop-service-api-goods" target="1.8" />
       <module name="meite-shop-service-api-member" target="1.8" />
       <module name="meite-shop-service-api-member-dto" target="1.8" />
       <module name="meite-shop-service-api-pay" target="1.8" />
+      <module name="meite-shop-service-api-seckill" target="1.8" />
       <module name="meite-shop-service-api-weixin" target="1.8" />
       <module name="meite-shop-service-api-weixin-dto" target="1.8" />
+      <module name="meite-shop-service-auth" target="1.8" />
       <module name="meite-shop-service-goods" target="1.8" />
       <module name="meite-shop-service-impl" target="1.8" />
       <module name="meite-shop-service-member" target="1.8" />
       <module name="meite-shop-service-pay" target="1.8" />
       <module name="meite-shop-service-point" target="1.8" />
+      <module name="meite-shop-service-seckill" target="1.8" />
+      <module name="meite-shop-service-seckill-consumer" target="1.8" />
       <module name="meite-shop-service-weixin" target="1.8" />
       <module name="meite-shop-unionpay-plugin" target="1.8" />
     </bytecodeTargetLevel>

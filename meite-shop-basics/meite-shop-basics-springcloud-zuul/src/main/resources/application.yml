@@ -35,6 +35,10 @@ zuul:
         ### 以 /app-member/访问转发到会员服务
       path: /app-pay/**
       serviceId: app-pay
+    api-d:
+        ### 以 /app-member/访问转发到会员服务
+      path: /app-seckill/**
+      serviceId: app-seckill
 
 ribbon:
   ReadTimeout: 3000
