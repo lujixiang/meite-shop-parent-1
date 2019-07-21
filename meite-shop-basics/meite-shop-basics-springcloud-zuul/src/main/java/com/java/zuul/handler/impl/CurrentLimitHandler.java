@@ -30,6 +30,7 @@ public class CurrentLimitHandler extends BaseHandler implements GatewayHandler {
 	public void service(RequestContext ctx, HttpServletRequest req, HttpServletResponse response) {
 		// 1.用户实现令牌桶限流
 		log.info(">>>>>>>第一关API接口限流>>>>>");
+		//todo 通过HttpServletRequest拿到请求地址,如果是app-seckill的就进行限流,否则直接走下一个handler
 		boolean tryAcquire = rateLimiter.tryAcquire(0, TimeUnit.SECONDS);
 		if (!tryAcquire) {
 			resultError(500, ctx, "当前排队人数过多,请稍后重试....");
